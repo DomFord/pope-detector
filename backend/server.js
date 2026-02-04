@@ -14,7 +14,7 @@ app.use(express.json({ limit: '50mb' }));
 
 // Load the papal bulls database
 let bullsDatabase = [];
-const dbPath = path.join(__dirname, '../data/bulls-database.json');
+const dbPath = path.join(__dirname, 'data/bulls-database.json');
 
 function loadDatabase() {
   try {
