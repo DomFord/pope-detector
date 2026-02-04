@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: pope-detector-api
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    healthCheckPath: /api/health

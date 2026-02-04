@@ -1,0 +1,26 @@
+{
+  "name": "pope-detector-backend",
+  "version": "1.0.0",
+  "description": "Backend for pope detector - analyzes text similarity to papal bulls",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "scrape": "node scraper.js",
+    "build-index": "node buildIndex.js"
+  },
+  "keywords": ["pope", "detector", "papal", "nlp"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "natural": "^6.7.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
